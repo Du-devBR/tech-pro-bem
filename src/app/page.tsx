@@ -1,7 +1,9 @@
+import { Layout } from "@/components/layout";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Tech pro bem</h1>
+    <main className="max-w-screen-xl m-auto bg-yellow-200 max-xl:px-8 max-md:px-4">
+      <Layout />
     </main>
   );
 }
