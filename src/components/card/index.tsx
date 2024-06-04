@@ -13,18 +13,14 @@ export default function Card({ data }: ArticleProps) {
     >
       <Image
         className="w-full object-cover h-full "
-        src={data.src}
+        src={data.image_url}
         alt="ddd"
         width={500}
         height={500}
         loading="lazy"
       />
       <div className="flex flex-col gap-2 p-4 absolute bottom-0 bg-slate-400 bg-opacity-70">
-        <h2 className="text-2xl font-medium">Titulo</h2>
-        <p className="text-lg font-normal">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
-          fugiat!
-        </p>
+        <h2 className="text-2xl font-medium">{data.title}</h2>
       </div>
     </Link>
   );
