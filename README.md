@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio técnico Tech pro bem |
 
-## Getting Started
 
-First, run the development server:
+![GitHub repo size](https://img.shields.io/github/repo-size/Du-devBR/tech-pro-bem)
+![GitHub language count](https://img.shields.io/github/languages/count/Du-devBR/tech-pro-bem)
+![GitHub forks](https://img.shields.io/github/forks/Du-devBR/tech-pro-bem)
+![GitHub license](https://img.shields.io/github/license/Du-devBR/tech-pro-bem)
+
+> Projeto desenvolvido para aplicação a vaga desenvolvedor React. Aplicação é uma etapa do cadastro de endereço de um sistema de delivery entre planetas. É possivel listar todos os endereçõs já cadastrados, filtrar, cadastrar novos endereçõs para os planetas Terra e Marte, onde marte possui apenas LOTES, é possivel editar esses endereços.
+> Projetos esta todos responsivo, validações de campos dos formularios, alerts de movimentações com Toast e skeleton para melhorar a UX do usuario.
+
+<!-- ## 100% Responsive
+
+<div
+  style="width:100%; display:flex; gap:16px, flex-wrap: wrap"
+>
+<img src="./src/assets//screenshot//screen1.png" width="30%">
+<img src="./src/assets//screenshot//screen5.png" width="30%">
+<img src="./src/assets//screenshot//screen2.png" width="30%">
+<img src="./src/assets//screenshot//screen3.png" width="30%">
+<img src="./src/assets//screenshot//screen4.png" width="30%">
+</div> -->
+
+
+## Implantações do projeto
+
+- [x] - Título da notícia.
+- [x] - Fragmento da notícia.
+- [x] - Uma imagem ilustrativa da notícia.
+- [x] - Autor.
+- [x] - Data da Publicação
+- [ ] - Responsivo.
+- [x] - Consumo Api externa
+- [ ] - Configurar rotas da api
+- [ ] - Organização de pastas
+
+## 💻 Como usar o projeto
+
+<h3>Clone o repositorio</h3>
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Du-devBR/tech-pro-bem.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ```bash
+cd desafio-tecnico-beyond/
+``` -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frontend
+```bash
+npm run dev
+```
 
-## Learn More
+```bash
+http://localhost:3000/
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🛠 Tecnologias
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [NextJs](https://pt-br.reactjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
