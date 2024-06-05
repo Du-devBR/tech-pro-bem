@@ -1,5 +1,5 @@
 "use client";
-import { getNews } from "@/api/routes";
+import { getNews } from "@/api/get-news";
 import Card from "@/components/card";
 import { Pagination } from "@/components/pagination";
 import { useQuery } from "@tanstack/react-query";

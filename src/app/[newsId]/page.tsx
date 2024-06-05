@@ -1,17 +1,25 @@
+"use client";
 import Image from "next/image";
 import { Article } from "../page";
 import { Button } from "@/components/ui/button";
+import { getNewsById } from "@/api/get-news-by-id";
+import { useQuery } from "@tanstack/react-query";
 
 interface InfoParams {
   params: {
     newsId: number;
   };
 }
-export default async function NewsDetail({ params }: InfoParams) {
-  const response = await fetch(
-    `https://api.spaceflightnewsapi.net/v4/articles/${params.newsId}`
-  );
-  const data: Article = await response.json();
+export default function NewsDetail({ params }: InfoParams) {
+  const { data, isPending } = useQuery({
+    queryKey: ["news", params],
+    queryFn: () => getNewsById(params.newsId),
+  });
+
+  if (isPending) {
+    return <p>...carregando</p>;
+  }
+
   return (
     <section className="flex flex-col my-12">
       <span className="text-sm text-zinc-600">{`Publicado em ${JSON.stringify(
