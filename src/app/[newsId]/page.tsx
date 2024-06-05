@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Article } from "../page";
 import { Button } from "@/components/ui/button";
 import { getNewsById } from "@/api/get-news-by-id";
-import { useQuery, useSuspenseQuery } from "@tanstack/react-query";
+import { useSuspenseQuery } from "@tanstack/react-query";
 import { formatDate } from "@/lib/formatDate";
 import {
   Breadcrumb,
@@ -15,6 +14,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Suspense } from "react";
 import { Loader } from "@/components/loader";
+import { NewsInterface } from "@/interfaces/news";
 
 interface InfoParams {
   params: {
@@ -22,7 +22,7 @@ interface InfoParams {
   };
 }
 export default function NewsDetail({ params }: InfoParams) {
-  const { data } = useSuspenseQuery({
+  const { data } = useSuspenseQuery<NewsInterface>({
     queryKey: ["news", params],
     queryFn: () => getNewsById(params.newsId),
   });

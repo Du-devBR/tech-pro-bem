@@ -1,4 +1,5 @@
 import { baseUrl } from "@/config/variables"
+import { NewsInterface } from "@/interfaces/news"
 
 export async function getNews(offSet: number){
   const url = `${baseUrl}/?limit=10&offset=${offSet}`
