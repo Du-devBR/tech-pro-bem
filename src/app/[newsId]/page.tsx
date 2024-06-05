@@ -4,6 +4,7 @@ import { Article } from "../page";
 import { Button } from "@/components/ui/button";
 import { getNewsById } from "@/api/get-news-by-id";
 import { useQuery } from "@tanstack/react-query";
+import { formatDate } from "@/lib/formatDate";
 
 interface InfoParams {
   params: {
@@ -22,7 +23,7 @@ export default function NewsDetail({ params }: InfoParams) {
 
   return (
     <section className="flex flex-col my-12">
-      <span className="text-sm text-zinc-600">{`Publicado em ${JSON.stringify(
+      <span className="text-sm text-zinc-600">{`Publicado em ${formatDate(
         data.published_at
       )}`}</span>
       <h1 className="text-3xl text-zinc-900 font-semibold my-5">
