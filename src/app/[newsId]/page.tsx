@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 import { getNewsById } from "@/api/get-news-by-id";
 import { useQuery } from "@tanstack/react-query";
 import { formatDate } from "@/lib/formatDate";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 
 interface InfoParams {
   params: {
@@ -22,7 +30,20 @@ export default function NewsDetail({ params }: InfoParams) {
   }
 
   return (
-    <section className="flex flex-col my-12">
+    <section className="flex flex-col my-12 gap-2">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage className="w-28 text-ellipsis whitespace-nowrap overflow-hidden">
+              {data.title}
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
       <span className="text-sm text-zinc-600">{`Publicado em ${formatDate(
         data.published_at
       )}`}</span>
@@ -42,7 +63,7 @@ export default function NewsDetail({ params }: InfoParams) {
         </a>
       </cite>
       <p className="text-xl text-zinc-9 font-medium my-5">{data.summary}</p>
-      <Button variant="default" className="p-8 bg-zinc-900 duration-500">
+      <Button variant="default" className="p-8 bg-zinc-900 duration-500 my-5">
         <a target="_blanck" href={data.url}>
           Veja na integra
         </a>
