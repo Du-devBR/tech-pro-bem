@@ -15,8 +15,8 @@ export default function Home() {
   });
 
   return (
-    <main className="flex flex-col gap-8 my-12">
-      <h1 className="text-3xl font-medium">As mais recentes</h1>
+    <main className="flex flex-col gap-8 my-12 max-sm:my-8">
+      <h1 className="text-3xl max-sm:text-2xl font-medium">As mais recentes</h1>
       <Suspense fallback={<Loader />}>
         <div className="w-full gap-4 grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1">
           {data.results.map((article: NewsInterface) => (

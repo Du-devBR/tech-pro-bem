@@ -6,12 +6,12 @@ export function Header() {
     <header className="flex items-center justify-between py-4 border-b-[1px] border-zinc-300">
       <div className="flex items-center gap-4 ">
         <Image
-          className="max-w-72"
+          className="max-w-72 max-sm:max-w-64"
           src={logo}
           alt="Logotipo E-nn, background preto e desenho de oculos na cor branca."
         />
       </div>
-      <Avatar>
+      <Avatar className="max-sm:w-8 max-sm:h-8">
         <AvatarImage src="https://avatars.githubusercontent.com/u/9919?v=4" />
       </Avatar>
     </header>
