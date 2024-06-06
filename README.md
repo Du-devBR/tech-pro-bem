@@ -43,6 +43,12 @@ git clone https://github.com/Du-devBR/tech-pro-bem.git
 ```
 
 ```bash
+cd tech-pro-bem/
+```
+
+
+
+```bash
 npm install
 ```
 
