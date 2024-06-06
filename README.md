@@ -6,20 +6,20 @@
 ![GitHub forks](https://img.shields.io/github/forks/Du-devBR/tech-pro-bem)
 ![GitHub license](https://img.shields.io/github/license/Du-devBR/tech-pro-bem)
 
-> Projeto desenvolvido para aplicação a vaga desenvolvedor React. Aplicação é uma etapa do cadastro de endereço de um sistema de delivery entre planetas. É possivel listar todos os endereçõs já cadastrados, filtrar, cadastrar novos endereçõs para os planetas Terra e Marte, onde marte possui apenas LOTES, é possivel editar esses endereços.
-> Projetos esta todos responsivo, validações de campos dos formularios, alerts de movimentações com Toast e skeleton para melhorar a UX do usuario.
+> Projeto desenvolvido para Tech pro bem. Aplicação é uma pagina de noticias desenvolvida em NextJs-14, nela é possivel visualizar as noticas mais
+>recentes no munda cientifico espacial. O conteudo é fornecido pela api Spaceflight News desenvolvida por  The Space Devs (TSD).
 
-<!-- ## 100% Responsive
+> Utilizado técnicas de roteamento do proprio nextjs-14, os estados da aplicação está sendo gerenciado pelo React query, assim foi possivel alcançar uma melhor perfomance da Api em relação a paginação fornecida pela Api.
+
+## 100% Responsive
 
 <div
   style="width:100%; display:flex; gap:16px, flex-wrap: wrap"
 >
 <img src="./src/assets//screenshot//screen1.png" width="30%">
-<img src="./src/assets//screenshot//screen5.png" width="30%">
 <img src="./src/assets//screenshot//screen2.png" width="30%">
 <img src="./src/assets//screenshot//screen3.png" width="30%">
-<img src="./src/assets//screenshot//screen4.png" width="30%">
-</div> -->
+</div>
 
 
 ## Implantações do projeto
@@ -29,10 +29,10 @@
 - [x] - Uma imagem ilustrativa da notícia.
 - [x] - Autor.
 - [x] - Data da Publicação
-- [ ] - Responsivo.
+- [x] - Responsivo.
 - [x] - Consumo Api externa
-- [ ] - Configurar rotas da api
-- [ ] - Organização de pastas
+- [x] - Configurar rotas da api
+- [x] - Organização de pastas
 
 ## 💻 Como usar o projeto
 
@@ -41,10 +41,6 @@
 ```bash
 git clone https://github.com/Du-devBR/tech-pro-bem.git
 ```
-
-<!-- ```bash
-cd desafio-tecnico-beyond/
-``` -->
 
 ```bash
 npm install
@@ -63,6 +59,8 @@ http://localhost:3000/
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [NextJs](https://pt-br.reactjs.org/)
+- [NextJs](https://nextjs.org/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [TanStack - React query](https://tanstack.com/query/latest)
+- [Shadcnui](https://ui.shadcn.com/docs)
